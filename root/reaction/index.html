@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gun reaction game</title>
+        <link rel="stylesheet" href="./css.css">
+    </head>
+
+    <body>
+        <div id="menu">
+            <h1>Test your reaction speed and save the dog.</h1>
+            <p id="info">Press SPACE to stop the bullet.</p>
+            <div id="difficulty">
+                <p class="bold">Difficulty chosen:</p>
+                <p>
+                    <label for="easy">Easy</label><input type="radio" name="difficulty" id="easy" value="easy" checked>
+                </p>
+                <p>
+                    <label for="medium">Medium</label><input type="radio" name="difficulty" id="medium" value="medium">
+                </p>
+                <p>
+                    <label for="hard">Hard</label><input type="radio" name="difficulty" id="hard" value="hard">
+                </p>
+            </div>
+            <div id="timeDiv">
+                <p class="bold">Maximum waiting time:</p>
+                <p><input type="range" id="rangeTimeInput" min="10" max="25" value="10">
+                    <span id="timeOutput">10</span>
+                    <span>
+                        seconds</span>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <span>Do you want surprises?
+                    </span>
+                    <input type="radio" name="surprise" id="surpriseNo" value="false" checked><label for="surpriseNo">No</label>
+                    <input type="radio" name="surprise" id="surpriseYes" value="true"><label for="surpriseYes">Yes</label>
+                </p>
+                <p>
+                    <span id="goal">The goal:</span>
+                    save the dog in hard mode. Don't let too many dogs get hit or you'll lose.
+                </p>
+            </div>
+            <button id="startButton">Start</button>
+            <p>
+                <img class="sound soundSelected" id="soundOff" src="img/soundOff.jpg" alt="soundOption">
+                <img class="sound" id="soundOn" src="img/soundOn.jpg" alt="soundOption">
+                <audio id="reloadSound" src="sound/reload.wav" type="audio/mpeg"></audio>
+                <audio id="music" src=""></audio>
+            </p>
+        </div>
+        <div id="game">
+            <img id="dog" src="img/dog.png" alt="I am a dog. Save me.">
+            <div id="gunArea">
+                <img id="pistol" src="img/pistol1.png" alt="I am a pistol and I'll shoot the dog.">
+                <img src="img/bullet.png" id="bullet" class="invisible">
+            </div>
+            <audio id="soundEffects" src=""></audio>
+        </div>
+        <p id="timesLost">Dogs unsaved:
+            <span>1</span>
+        </p>
+        <p id="revengeText">Revenge incoming</p>
+        <img id="newspaper" src="img/newspaper.png" alt="">
+        <div id="suprises">
+            <img id="surprise1" src="img/img1.png" alt="doggies">
+            <img id="surprise2" src="img/img2.jpg" alt="a doggy">
+        </div>
+        <div id="crack"></div>
+        <audio id="crackSound" src="sound/glass.wav"></audio>
+
+        <script src="./js.js"></script>
+    </body>
+
+</html>

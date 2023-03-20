@@ -1,0 +1,189 @@
+#menu {
+    text-align: center;
+}
+
+#game {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#info {
+    text-decoration: underline;
+    font-size: 1.2em;
+    margin-bottom: 5vh;
+}
+
+#startButton {
+    padding: 0.5em 2em;
+}
+
+.sound {
+    opacity: 0.4;
+    width: 50px;
+    margin: 0.5em;
+}
+
+.sound:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.soundSelected {
+    opacity: 1;
+}
+
+#dog {
+    width: 25vw;
+    position: fixed;
+    left: 1vw;
+    top: 20vh;
+
+}
+
+#gunArea {
+    position: fixed;
+    right: 1vw;
+    top: 20vh;
+}
+
+#pistol {
+    /*animation: 3s infinite upAndDownAnim;*/
+    width: 25vw;
+}
+
+#bullet {
+    z-index: 1;
+    width: 5vw;
+    position: absolute;
+    top: 22%;
+    right: 24vw;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+@keyframes upAndDownAnim {
+    0% {
+        translate: 0px -5px;
+    }
+
+    50% {
+        translate: 0px 5px;
+    }
+
+    100% {
+        translate: 0px -5px;
+    }
+}
+
+.moving {
+    transform: translate(-100vw);
+    transition-duration: 5s;
+    transition-property: transform;
+    transition-timing-function: linear;
+}
+
+#timesLost {
+    position: fixed;
+    top: 2vh;
+    left: 1vw;
+    visibility: hidden;
+}
+
+#revengeText {
+    position: fixed;
+    top: 6vh;
+    left: 1vw;
+    visibility: hidden;
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#newspaper {
+    z-index: 1;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    width: 49vw;
+    animation: 0.5s linear 3 rotation, 3s ease showAndGrow;
+    display: none;
+}
+
+@keyframes rotation {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes showAndGrow {
+    0% {
+        width: 1vw;
+        visibility: hidden;
+    }
+
+    100% {
+        width: 49vw;
+        visibility: visible;
+    }
+}
+
+
+.hidden {
+    display: none;
+}
+
+#surprise1 {
+    position: fixed;
+    left: 32%;
+    bottom: -60vh;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#surprise2 {
+    position: fixed;
+    left: -25vw;
+    bottom: -45vh;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goUpAnimation {
+    100% {
+        transform: translate(0px, -45vh);
+    }
+}
+
+@keyframes animation2 {
+    100% {
+        transform: translate(25vw, -25vh);
+    }
+}
+
+#crack {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/crack.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: black;
+    background-position: center;
+    z-index: 100;
+    display: none;
+}
+
+#goal {
+    text-decoration: underline;
+    font-weight: bold;
+}
