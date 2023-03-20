@@ -1,0 +1,89 @@
+body{
+    background-color:rgb(115, 115, 228);
+    margin:100px auto;
+}
+
+img{
+    width:100px;
+}
+
+main{
+    display:flex;
+    width:800px;
+    background-color: beige;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding:20px;
+    border-radius:10px;
+
+}
+
+section{
+    margin-top:5px;
+    display:flex;
+    flex-direction: column;
+    width:300px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center; /*only works with wrap on and because it's a column*/
+}
+
+ul{
+    list-style: none;
+    padding:0;
+}
+
+section:nth-of-type(2){
+    border-right:1px solid gray;
+    border-left:1px solid gray;
+}
+
+li{
+    border-bottom:1px solid rgba(81, 81, 219, 0.753);
+    padding:10px 1px;
+}
+
+section li:nth-of-type(1){
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+}
+
+section li:nth-of-type(3){
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+}
+
+button{
+    margin:15px;
+    padding:5px 25px;
+    color:blue;
+    text-transform: uppercase;
+
+}
+
+button:hover{
+    color:white;
+    background-color: blue;
+}
+
+@media (max-width: 870px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        width:300px;
+    }
+    section{
+        margin-bottom:10px;
+        align-items:center;
+    }
+    section:nth-of-type(2){
+        border-right:none;
+        border-left:none;
+        border-top:1px solid gray;
+        border-bottom:1px solid gray;
+        padding-top:30px;
+    }
+}

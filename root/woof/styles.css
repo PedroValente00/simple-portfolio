@@ -1,0 +1,254 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(white 20%, #ddd);
+    box-sizing: content-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    position: relative;
+    right: 5%;
+}
+
+#slogan {
+    display: flex;
+}
+
+#header-img {
+    height: 50px;
+    filter: grayscale(1);
+}
+
+#header-txt {
+    margin: auto;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+nav ul {
+    display: flex;
+    width: 150%;
+    justify-content: space-around;
+    position: relative;
+    right: 40%;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#video-wrap {
+    display: inline;
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+}
+
+#video-wrap:hover::after {
+    content: "Pretend it's a video presentation about the Woof product or service instead of a random youtube video";
+    position: fixed;
+    left: 10px;
+    top: 40%;
+    background-color: orange;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: left;
+}
+
+main {
+    margin: 150px auto;
+    text-align: justify;
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+section>h2 {
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+.centered {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about p:nth-of-type(1)::first-letter {
+    font-size: 2em;
+    border: 1px solid black;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 5px 10px;
+}
+
+.featured-img {
+    grid-column: 1/2;
+    width: 65px;
+    justify-self: end;
+    align-self: center;
+    margin-right: 25px;
+}
+
+#features div,
+#features h2 {
+    grid-column: 2/3;
+}
+
+#features h3 {
+    margin-bottom: -5px;
+    font-family: cursive;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #bbe3e2;
+    width: 100%;
+    padding: 10px 10px 0;
+    border-top: 1px solid #57d5d2;
+    display: flex;
+    justify-content: space-between;
+    line-height: 6px;
+}
+
+#copyright {
+    font-size: 0.8em;
+}
+
+footer div {
+    margin-right: 20px;
+}
+
+footer div a {
+    margin: 0 5px;
+}
+
+#price-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    text-align: center;
+    background-color: rgba(255, 254, 229, 0.4);
+    padding: 8px;
+    border-radius: 18px;
+
+}
+
+#price-table ul#list-of-services {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
+
+#price-table ul#list-of-services li {
+    margin: 5px;
+    text-align: left;
+}
+
+#price-table img {
+    width: 20px;
+}
+
+#pricing {
+    width: 85%;
+}
+
+#price-table h3 {
+    background-color: #ebe2b6;
+    border: 3px outset #999376;
+}
+
+#price-table h4 {
+    margin: 0 auto 20px auto;
+    width: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+
+#pricing section {
+    margin-bottom: 20px;
+}
+
+button.select {
+    margin-top: 40px;
+    padding: 10px 60px;
+    box-shadow: 6px 6px 10px rgb(52, 52, 47);
+    background-color: rgba(255, 235, 12, 0.8);
+}
+
+button.select:hover {
+    background-color: rgba(255, 235, 12, 0.9);
+}
+
+button.select:active {
+    margin-top: 40px;
+    padding: 10px 60px;
+    box-shadow: 1px 2px 10px rgb(253, 233, 12);
+    background-color: rgba(235, 215, 0, 1);
+}
+
+@media (max-width:1000px) {
+    #video {
+        width: 300px;
+    }
+
+    #price-table {
+        grid-template-columns: 1fr;
+    }
+
+    #price-table section {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width:850px) {
+    header {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        position: initial;
+        width: auto;
+        align-items: center;
+    }
+
+    #howItWorks {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}

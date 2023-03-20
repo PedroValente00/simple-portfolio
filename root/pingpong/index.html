@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <section id="section1">
+    <img src="https://images.unsplash.com/photo-1611762348135-5b09d2f0390d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="ping pong image">
+    <p>Ping pong Score Keeper</p>
+    </section>
+
+    <section id="section2">
+        <p id="results"><span id="score1">0</span> to <span id="score2">0</span></p>
+        <p id="controls">Use the buttons below to keep score</p>
+        <p>
+            <label for="players"></label>
+                Playing to 
+                <select name="players" id="players">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+        </p>
+        <p>
+            <button id="button1">+1 Player One</button>
+            <button id="button2">+2 Player Two</button>
+            <button id="button3">Reset</button>
+        </p>
+    </section>
+</main>
+    <script src="app.js"></script>
+</body>
+</html>

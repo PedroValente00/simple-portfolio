@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1 id="title"> Survey Form</h1>
+    <p id="description">This is just a pointless survey form</p>
+    </header>
+
+    <main>
+    <form id="survey-form">
+    
+    <div id="user_info">
+
+    <p>
+    <label for="name" id="name-label">Name</label>
+    <input type="text" required id="name" name="name" class="info" placeholder="Enter your name">
+    </p>
+
+    <p>
+    <label for="email" id="email-label">Email</label>
+    <input type="email" required id="email" placeholder="Enter your email" class="info">
+    </p>
+
+    <p>
+    <label for="number" id="number-label">Age</label>
+    <input type="number" id="number" min="18" max="120" placeholder="Your age" class="info">
+    </p>
+    </div>
+
+    <div id="current_role">
+
+    <p>
+    <label for="dropdown">Which option best describes your current role?</label></p>
+    <p>
+
+    <select id="dropdown">
+    <option selected disabled>--- Please choose an option ---</option>
+    <option>Student</option>
+    <option> Full Time Job</option>
+    <option>Full Time Learner</option>
+    <option>Other</option>
+    </select>
+    </p>
+    </div>
+
+    <div id="radios">
+    <p>What do you think of this form?</p>
+    <p>
+    <input type="radio" id="radio1" name="radio" value="Likes form">
+    <label for="radio1">I like it</label>
+    </p>
+    <p>
+    <input type="radio" id="radio2" name="radio" value="Mixed feelings for form">
+    <label for="radio2">I've seen worse</label>
+    </p>
+    <p>
+    <input type="radio" id="radio3" name="radio" value="Dislikes form">
+    <label for="radio3">Don't quit your day job</label>
+    </p>
+    </div>
+
+    <div id="games">
+
+    <p>I like games. Have you played any of these?</p>
+    <p>
+    <input type="checkbox" value="fallout" id="checkbox1"> 
+    <label for="checkbox1"> The Fallout games franchise</label>
+    </p>
+    <p>
+    <input type="checkbox" value="dishonored" id="checkbox2"> 
+    <label for="checkbox2"> Dishonored 1 and/or 2</label>
+    </p>
+    <p>    
+    <input type="checkbox" value="minecraft" id="checkbox3"> 
+    <label for="checkbox3"> Minecraft</label>
+    </p>
+    <p>
+    <input type="checkbox" value="fallout" id="checkbox4"> 
+    <label for="checkbox4"> Diablo (the mobile game doesn't count)</label>
+    </p>
+    <input type="checkbox" value="does not like games" id="checkbox5"> 
+    <label for="checkbox5"> I don't like games</label>
+    </div>
+    
+    <p><textarea placeholder="Do you have any comments?" rows="6" cols="33"></textarea></p>
+    
+    <p><input id="submit" type="submit"></p>
+    </form>
+
+    </main>
+
+</body>
+</html>
+

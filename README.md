@@ -1,2 +1,2 @@
 # simple-portfolio
-a simple portfolio of basic projects
+A simple portfolio of basic projects.

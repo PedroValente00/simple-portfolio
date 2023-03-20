@@ -1,0 +1,24 @@
+body{
+    margin:10px auto;
+    width:500px;
+    text-align:center;
+}
+img{
+    width:500px;
+}
+section{
+    border:1px solid lightgray;
+    margin-bottom:5px;
+}
+#section1 p{
+    font-weight:bold;
+}
+#results{
+    font-weight: bold;
+}
+.green{color:green}
+.red{color:red}
+#button1{background-color:lightblue}
+#button2{background-color:brown}
+#button3{background-color:orange}
+button{padding:5px}

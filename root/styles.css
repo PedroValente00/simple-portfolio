@@ -1,0 +1,208 @@
+/*<header> and <nav> stuff */
+
+:root {
+    --reddish1: #ca4444;
+    --reddish2: #a33535;
+    --nav-hover: #668cff;
+    --whiteish: #f2f2f2;
+    --blackish: #303030;
+    --bluish-dark: #38386a;
+    --figcaption: #181818;
+}
+
+body {
+    font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--blackish);
+    color: var(--whiteish);
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+    z-index: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(90deg, var(--reddish1), var(--reddish2));
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0 2rem;
+}
+
+nav ul a {
+    padding: 1.5rem;
+    display: block;
+    text-decoration: none;
+    color: var(--whiteish);
+}
+
+nav ul a:hover {
+    background-color: var(--nav-hover);
+}
+
+#question-mark {
+    margin-left: 2rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 50%;
+    border: 1px solid var(--whiteish);
+}
+
+#question-mark:hover {
+    cursor: help;
+}
+
+#question-mark:hover::before {
+    content: "";
+    position: absolute;
+    top: 4.5rem;
+    left: 1.6rem;
+    height: 0;
+    width: 0;
+    border-top: 3rem solid transparent;
+    border-left: 3rem solid var(--whiteish);
+    transform: rotate(135deg);
+}
+
+#question-mark:hover::after {
+    content: "This is a free hosting website. Please don't mind the ugly URL address (and possible ads).";
+    position: absolute;
+    background-color: var(--whiteish);
+    top: 5em;
+    left: 0.5rem;
+    max-width: 14rem;
+    border-radius: 1rem;
+    color: var(--blackish);
+    padding: 1rem;
+    font-size: 0.6em;
+}
+
+/*<main> content starts from here */
+
+#welcome-section {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    font-size: 1.8rem;
+}
+
+#welcome-section h1 {
+    margin-top: 0;
+}
+
+#welcome-section p {
+    font-style: italic;
+    color: var(--reddish1);
+    margin: 0;
+}
+
+#projects-section {
+    background-color: var(--bluish-dark);
+    padding-top: 2em;
+}
+
+h2 {
+    padding: 2em;
+    font-size: 2em;
+    text-decoration: underline;
+
+}
+
+#projects {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5em;
+    max-width: 100vw;
+    margin: auto;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+.project-image {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.project-image:hover {
+    opacity: 1;
+}
+
+.project-image img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    color: var(--whiteish);
+    background-color: var(--figcaption);
+    margin-top: -0.25em;
+    padding: 1em;
+}
+
+#contact {
+    height: 60vh;
+}
+
+#contact a {
+    color: rgb(241, 199, 46);
+    margin-top: 1em;
+}
+
+#contact a:hover {
+    color: rgb(255, 174, 0);
+}
+
+#contact h2 {
+    padding: 4em 1em 1em;
+}
+
+footer {
+    margin: 8em 1em 0em;
+    border-top: 5px solid var(--reddish1);
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:600px) {
+
+    nav,
+    nav ul,
+    footer {
+        /* background-color: red; */
+        flex-direction: column;
+        padding: 0.4em;
+    }
+
+    nav ul a {
+        padding: 0.1rem 1.5rem;
+    }
+
+    #question-mark {
+        display: none;
+    }
+
+    #projects {
+        margin: 3em;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,15 @@
+h1, p{
+    text-align:center;
+}
+
+body{
+    margin: 0 auto;
+}
+
+#baseDiv{
+    height:1000px;
+}
+
+div{
+    height:15px;
+}

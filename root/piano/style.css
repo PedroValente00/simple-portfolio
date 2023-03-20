@@ -1,0 +1,28 @@
+#piano{
+    background-color:black;
+    height:200px;
+    width:920px;
+    margin:50px auto;
+    font-size:0; /*removes white spaces between divs*/
+    text-align:center;
+    padding:0.5%;
+}
+
+.key-white{
+    background-color:white;
+    border:1px solid black;
+    width:10%;
+    height:100%;
+    display:inline-block;
+    box-sizing: border-box;
+
+}
+.key-black::after{
+    content:"";
+    background-color:black;
+    height:75%;
+    width:50%;
+    display:block;/*without this ::after won't render, no idea why */
+    position:relative;
+    left:75%;
+}

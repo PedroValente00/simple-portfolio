@@ -1,0 +1,114 @@
+body{
+    background-color:rgb(194, 194, 163);
+}
+
+main{
+    margin:50px auto;
+}
+
+#face{
+    background-color:rgb(255, 212, 128);
+    height:250px;
+    width:200px;
+    margin:auto;
+    border-radius: 40% 40% 50% 50%;
+    border-top:30px solid black;
+}
+
+#body{
+    background-color: rgb(0,0,125);
+    height:200px;
+    width:320px;
+    margin:-20px auto;
+    position:relative;
+    z-index:-1;
+    border:1px solid rgb(0, 0, 125);
+    border-radius:80px 80px 0 0;
+}
+
+
+#tie-top{
+    margin:-1px auto;
+    width:50px;
+    height:50px;
+    border-style:solid;
+    border-width: 50px;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+#tie-top::after{ /* the turtle neck inner black part */
+    content:"";
+    border-style:solid;
+    border-width: 50px;
+    border-color: black transparent transparent  transparent; 
+    border-radius:50px;
+    position:relative;
+    left:-25px;
+    top:0; 
+}
+
+#tie-body{
+    background-color:black;
+    width:25px;
+    height:120px;
+    margin:-120px auto;
+}
+
+#tie-tip{
+    margin:120px auto;
+    width:0;
+    height:0;
+    border-width:12.5px;
+    border-color:black transparent transparent transparent ;
+    border-style:solid;
+}
+
+.tie-deco{
+    background-color:orange;
+    height:5px;
+    width:5px;
+    border-radius:10px;
+    margin:10px auto;
+    position:relative;
+    top:-200px;
+}
+
+#eyes{
+    width:115px;
+    margin:80px auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+#eyes div{
+    height:16px;
+    width:18px;
+    background-color:rgba(255, 255, 255, 0.8);
+    border-radius:50%;
+    /* below is to center the irises in the ::after*/
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#eyes div::after{
+    content:"";
+    height:5px;
+    width:5px;
+    background-color:rgb(30, 80, 0);
+    border-radius:20px;
+    border:1px solid black;
+
+
+
+}
+
+#mouth{
+    width:65px;
+    height:20px;
+    margin: 10px auto;
+    border-style:solid;
+    border-width:5px;
+    border-color:transparent transparent rgb(255, 160, 128) transparent;
+    border-radius:50%;
+}

@@ -1,0 +1,97 @@
+body {
+    font-family: Georgia, serif;
+    color: gray;
+    text-align: justify;
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+nav header {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+nav ul li {
+    margin: 2px;
+    border-top: 1px solid black;
+}
+
+nav ul li:last-of-type {
+    border-bottom: 1px solid black;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+h1,
+h2,
+.title {
+    color: black;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    padding: 20px 10px;
+    border-right: 4px solid gray;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    padding: 20px 10px;
+    margin-left: 20px;
+}
+
+section {
+    padding-top: 10px;
+}
+
+code {
+    background-color: rgb(220, 220, 220);
+    display: block;
+    padding: 15px;
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 99%;
+        padding: 20px 0;
+        border: none;
+        text-align: center;
+    }
+
+    main {
+        position: relative;
+        top: 350px;
+        left: 0;
+        width: 99%;
+        left: 10px;
+        margin-left: 0;
+        padding: 20px 0;
+    }
+}
